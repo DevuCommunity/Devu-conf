@@ -1,0 +1,17 @@
+*{
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html, body, #root{
+  height: 100%;
+}
+body{
+  position: relative;
+  padding: 20px;
+  background: rgb(75,46,87);
+  background: linear-gradient(0deg, rgba(75,46,87,1) 0%, rgba(0,26,59,1) 63%);
+}
+:root{
+  --radiactive: #99F2BF;
+}

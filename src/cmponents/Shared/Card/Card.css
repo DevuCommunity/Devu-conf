@@ -1,0 +1,7 @@
+.card{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: solid 1px var(--radiactive);
+}
