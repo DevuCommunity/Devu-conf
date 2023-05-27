@@ -1,0 +1,19 @@
+.user-card{  
+    width: 290px;
+    max-height: 190px;
+}
+p.conference {
+    color: var(--purple);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'FredokaOne';
+    letter-spacing: 3px;
+}
+
+
+span.description {
+    color: var(--gray);
+    font-size: 15px;
+    font-family: 'Inter';
+}

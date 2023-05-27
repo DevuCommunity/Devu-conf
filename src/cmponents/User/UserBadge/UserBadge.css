@@ -1,0 +1,22 @@
+.user-badge{
+    display: flex;
+    gap: 16px;
+    max-width: 273px;
+}
+.user-circle{
+    width: 40px;
+    height: 40px;
+}
+.user-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.user-name{
+    color: var(--gray);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-family: 'FredokaOne';
+    letter-spacing: 3px;
+}

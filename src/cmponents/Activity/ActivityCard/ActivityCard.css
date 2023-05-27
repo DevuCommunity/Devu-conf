@@ -1,0 +1,11 @@
+.activity-card{
+    width: 290px;
+    max-height: 114px;
+}
+.activity-conference{
+    font-size: 20px;
+    color: var(--radiactive)
+}
+.activity-speaker{
+    font-size: 20px;
+}
