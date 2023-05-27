@@ -1,15 +1,17 @@
-import { Card } from "../../Shared/Card"
+import { Card } from "../../Shared"
+import { UserBadge } from "../UserBadge/UserBadge"
+import "./UserCard.css"
 
-
-export const UserCard = ({name, conference,
-    description}) => {
+export const UserCard = ({imgUrl, name, conference, description}) => {
   return (
-    <Card>
-        <p>{name}</p>
-        <h5>{conference}</h5>
-        <span>
+       <div className="user-card">
+    <Card boderColor="" withBackground="true">
+       <UserBadge imgUrl={imgUrl} name={name} />
+        <p className="conference">{conference}</p>
+        <span className="description">
             {description}
         </span>
     </Card>
+       </div>
   )
 }

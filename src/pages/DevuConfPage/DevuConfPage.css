@@ -1,0 +1,72 @@
+.event-devuconf-container{
+    width: 1565px;
+    overflow-x: hidden;
+}
+.current-event{
+    display: flex;
+    height: 100%;
+}
+
+.description-panel{
+    height: 100%;
+    width: 1244px;
+    overflow-y: hidden;
+}
+.description-event{
+    height: 40%;
+}
+.header{
+    position: relative;
+    height: 170px;
+}
+.title{
+    font-size: 150px;
+    height: auto;
+}
+.sub-title{
+    position: absolute;
+    bottom: 0px;
+    font-size: 32px;
+    color: var(--purple);
+}
+.event-description{
+    font-size: 24px;
+}
+
+.speakers-panel{
+    max-height: 60%;
+    overflow-y: auto;
+    border-bottom: solid 1px var(--purple);
+}
+
+.itinerary-event{
+    height: 100%;
+    width: calc(100% - 1244px);
+    overflow: hidden;
+    border-bottom: solid 1px var(--radiactive);
+}
+.itinerary-title{
+    text-align: center;
+    font-size: 29px;
+    color: var(--purple);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px red; */
+}
+.itinerary{
+    margin-left: 16px;
+    max-height: calc(100% - 50px);
+    overflow-y: auto;
+}
+.upcoming-events{
+    height: 182px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.event-devuconf-container {
+    height: 100%;
+}
+

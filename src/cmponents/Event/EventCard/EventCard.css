@@ -1,0 +1,18 @@
+.event-card{
+    min-width: 290px;
+    max-width: 290px;
+    max-height: 190px;
+}
+
+.event-title{
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 8px;
+}
+.event-sub-title{
+    font-size: 24px;
+    color: var(--purple);
+}
+.event-date-ubication{
+    
+}

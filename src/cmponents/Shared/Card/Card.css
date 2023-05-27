@@ -1,7 +1,22 @@
 .card{
-    padding: 8px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card-border-radiactive{
     border: solid 1px var(--radiactive);
+
+}
+.card-border-purple{
+    border: solid 1px var(--purple);
+
+}
+
+.card-gradient{
+ background: var(--c-gradient);
 }
