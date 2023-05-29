@@ -1,10 +1,23 @@
 .list-content{
     height: 100%;
-    max-width: 100%;
+    width: 100%;
     display: flex;
+    justify-content: center;
     gap: 16px;
     padding: 8px 0px;
 }
 .list-wrap{
     flex-wrap: wrap;
+}
+
+
+@media screen and (min-width: 375px ) {
+ 
+}
+
+
+@media screen and (min-width: 425px ) {
+    .list-content{
+        justify-content: flex-start;
+    }
 }

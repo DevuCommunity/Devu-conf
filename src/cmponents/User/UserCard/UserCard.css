@@ -1,6 +1,5 @@
 .user-card{  
-    width: 290px;
-    max-height: 190px;
+    width: 100%;
 }
 p.conference {
     color: var(--purple);
@@ -16,4 +15,10 @@ span.description {
     color: var(--gray);
     font-size: 15px;
     font-family: 'Inter';
+}
+
+@media screen and (min-width: 768px ) {
+    .user-card{  
+        width: 290px;
+    }
 }
