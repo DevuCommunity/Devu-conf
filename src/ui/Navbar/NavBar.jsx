@@ -7,7 +7,7 @@ export const NavBar = () => {
       <div className="menu-nav">
         <NavLink to="/home">Inicio</NavLink>
 
-        <NavLink to="/conf">Conf</NavLink>
+        <NavLink to="/events">Eventos</NavLink>
       </div>
     </nav>
   );

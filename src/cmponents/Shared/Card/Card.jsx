@@ -3,7 +3,7 @@ import classNames from "classnames";
 import "./Card.css";
 
 
-export const Card = ({children, boderColor = "purple", withBackground = false}) => {
+export const Card = ({children, boderColor = "", withBackground = false}) => {
 
 
   return (

@@ -20,8 +20,12 @@
     width: 35px;
 }
 .main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: calc(100% - 35px - 8px);
     padding: 16px;
+
 }
 .menu{
     display: flex;
