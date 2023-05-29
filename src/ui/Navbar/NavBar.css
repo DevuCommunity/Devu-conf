@@ -1,0 +1,21 @@
+.menu-nav{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 300px;
+    max-width: 700px;
+    border-radius: 20px;
+    padding: 4px;
+    background-color: var(--dark-purple-100);
+}
+
+.menu-nav a{
+    text-decoration: none;
+    color: var(--gray);
+    padding: 2px;
+    transition: .5s;
+}
+
+.menu-nav a:hover{
+    outline: solid 1px  var(--purple);
+}

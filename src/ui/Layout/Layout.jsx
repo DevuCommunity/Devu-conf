@@ -1,3 +1,4 @@
+import { NavBar } from "../Navbar/NavBar";
 import "./Layout.css";
 export const Layout = ({ children }) => {
   return (
@@ -9,7 +10,7 @@ export const Layout = ({ children }) => {
         <div className="main-content">{children}</div>
       </div>
       <div className="menu">
-        <nav></nav>
+        <NavBar></NavBar>
       </div>
     </div>
   );

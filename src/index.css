@@ -52,14 +52,20 @@ body,
 .fredoka {
   font-family: "FredokaOne";
 }
-
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body {
   font-family: "Inter";
   position: relative;
   padding: 8px;
   color: var(--gray);
   background: var(--b-gradient);
+  background-repeat: no-repeat;
   overflow: hidden;
+
 }
 
 .t-gradient {

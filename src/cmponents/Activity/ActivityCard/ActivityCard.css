@@ -1,6 +1,5 @@
 .activity-card{
-    width: 290px;
-    max-height: 114px;
+    width: 100%;
 }
 .activity-conference{
     font-size: 20px;
@@ -8,4 +7,9 @@
 }
 .activity-speaker{
     font-size: 20px;
+}
+@media screen and (min-width: 768px ) {
+    .activity-card{
+        width: 290px;
+    }
 }

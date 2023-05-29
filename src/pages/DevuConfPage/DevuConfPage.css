@@ -1,47 +1,43 @@
 .event-devuconf-container{
-    width: 1565px;
-    overflow-x: hidden;
+    max-width: 1565px;
+    height: 100%;
 }
 .current-event{
-    display: flex;
     height: 100%;
 }
 
 .description-panel{
-    height: 100%;
-    width: 1244px;
-    overflow-y: hidden;
+    width: 100%;
+    border-bottom: solid 1px var(--purple);
 }
 .description-event{
-    height: 40%;
+    width: 100%;
 }
 .header{
     position: relative;
-    height: 170px;
+    height: auto;
 }
 .title{
-    font-size: 150px;
+    font-size: 90px;
     height: auto;
 }
 .sub-title{
     position: absolute;
     bottom: 0px;
-    font-size: 32px;
+    font-size: 24px;
     color: var(--purple);
 }
 .event-description{
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .speakers-panel{
-    max-height: 60%;
-    overflow-y: auto;
-    border-bottom: solid 1px var(--purple);
+    display: flex;
+    justify-content: center;
 }
 
 .itinerary-event{
-    height: 100%;
-    width: calc(100% - 1244px);
+    width: 100%;
     overflow: hidden;
     border-bottom: solid 1px var(--radiactive);
 }
@@ -53,20 +49,64 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: solid 1px red; */
 }
 .itinerary{
-    margin-left: 16px;
-    max-height: calc(100% - 50px);
-    overflow-y: auto;
-}
-.upcoming-events{
-    height: 182px;
-    overflow-x: auto;
-    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
 }
 
-.event-devuconf-container {
-    height: 100%;
+@media screen and (min-width: 768px ) {
+    .title{
+        font-size: 150px;
+        height: auto;
+    }
 }
 
+@media screen and (min-width: 1023px ) {
+    .event-devuconf-container{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .current-event{
+        display: flex;
+        gap: 8px;
+    }
+    .description-panel{
+        width: calc(100% - 305px);
+    }
+    .description-event{
+        max-height: 235px;
+        margin-bottom: 8px;
+    }
+    .title{
+        font-size: 150px;
+    }
+    .sub-title{
+        font-size: 36px;
+        color: var(--purple);
+    }
+    .event-description{
+        font-size: 16px;
+    }
+    .speakers-panel{
+        max-height: calc(100% - 243px);
+        overflow-y: auto;
+    }
+    .itinerary-event{
+        width: 305px;
+         height: 100%;
+    }
+    .itinerary{
+        max-height: calc(100% - 50px);
+        overflow-y: auto;
+    }
+}
+
+@media screen and (min-width: 1360px ) {
+    .description-panel{
+        width: calc(100% - 305px);
+    }
+    .itinerary-event{
+        width: 305px;
+    }
+}
