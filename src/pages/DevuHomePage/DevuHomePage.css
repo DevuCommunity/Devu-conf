@@ -1,37 +1,33 @@
-.DevuHomePage__title-container {
-  display: flex;
-  flexWrap: wrap;
-  flex-direction: row;
+.DevuHomePage__container {
+  display: grid;
+  grid-template-columns: 860px auto;
+  grid-template-rows: 363px auto;
+}
+
+.DevuHomePage__title {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.DevuHomePage__pet {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.DevuHomePage__description {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .DevuHomePage__pet > img {
-  margin-left: -48px;
-  width: max(100%, 184px);
-}
-
-.DevuHomePage__description > p {
-  display: inline;
-}
-
-.DevuHomePage__description-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  font-size: 30px;
-  fontFamily: Inter;
-}
-
-.DevuHomePage__description-wrapper {
-  max-width: 800px;
-}
-
-.DevuHomePage__social-networks {
-  gap: 16px;
-  display: flex;
-  margin-top: 16px;
-  flex-direction: row;
-}
-
-.DevuHomePage__description-polyfill {
-  width: calc(637px + 48px);
+  margin-top: -12px;
+  margin-left: -60px;
+  width: 684px;
+  height: 684px;
 }

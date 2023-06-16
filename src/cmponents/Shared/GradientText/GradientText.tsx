@@ -1,10 +1,18 @@
+interface GradientTextProps {
+  children: React.ReactNode;
+  text?: string;
+  type?: string;
+  gradientType?: string;
+  style?: React.CSSProperties;
+}
+
 export const GradientText = ({
   children,
   text,
   type = 'title',
   gradientType = 'devu',
   style = {}
-}) => {
+}: GradientTextProps) => {
   const gradients = {
     devu: '--t-gradient-devu',
     b: '--b-gradient',
