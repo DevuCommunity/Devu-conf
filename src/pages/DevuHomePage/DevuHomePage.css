@@ -42,6 +42,10 @@
   font-size: min(calc(var(--scale) * 300), 300px);
 }
 
+.DescriptionText__container {
+  margin-top: 20px;
+}
+
 .DescriptionText__container > span {
   font-size: 33px;
 }
