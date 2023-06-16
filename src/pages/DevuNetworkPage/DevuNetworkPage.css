@@ -1,0 +1,51 @@
+.container-network {
+    max-width: 1565px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.title-network{
+    font-size: 24px;
+    color: var(--radiactive);
+}
+.content-network{
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        background: var(--c-gradient);
+}
+
+.icon-box{
+    background-color: transparent;
+    padding: 8px;
+    width: auto;
+    height: auto;
+}
+
+.icon-box:hover{
+    outline: solid 1px  var(--purple);
+}
+
+
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 150px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .event-devuconf-container {}
+}
+
+@media screen and (min-width: 1360px) {}

@@ -1,6 +1,11 @@
+import { motion } from "framer-motion"
 
 export const DevuHomePage = () => {
   return (
-    <div>DevuHomePage</div>
+    <motion.div
+    initial={{ opacity: 0}}
+    animate={{ opacity: 1 }}    
+
+    >DevuHomePage</motion.div>
   )
 }
