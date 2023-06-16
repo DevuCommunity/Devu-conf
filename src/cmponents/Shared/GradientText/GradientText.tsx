@@ -27,7 +27,6 @@ export const GradientText = ({
   return (
     <span
       style={{
-        fontSize: fontSizes[type],
         background: `var(${gradients[gradientType]})`,
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',

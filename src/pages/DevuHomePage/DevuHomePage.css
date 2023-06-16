@@ -1,3 +1,8 @@
+:root {
+  --base-screen-width: 1728;
+  --scale: calc((100vw * 100 / var(--base-screen-width)) / 100);
+}
+
 .DevuHomePage__container {
   display: grid;
   grid-template-columns: 860px auto;
@@ -28,6 +33,12 @@
 .DevuHomePage__pet > img {
   margin-top: -12px;
   margin-left: -60px;
-  width: 684px;
-  height: 684px;
+  width: calc(100% + 60px);
+}
+
+.DevuHomePage__title > span {
+  font-size: min(
+    calc(var(--scale) * 300),
+    300px
+  );
 }
