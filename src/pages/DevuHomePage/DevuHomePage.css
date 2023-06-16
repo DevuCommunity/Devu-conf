@@ -36,9 +36,25 @@
   width: calc(100% + 60px);
 }
 
+/* The following styles will handle  */
+
 .DevuHomePage__title > span {
   font-size: min(
     calc(var(--scale) * 300),
     300px
+  );
+}
+
+.DescriptionText__container > span {
+  font-size: min(
+    calc(var(--scale) * 33),
+    33px
+  );
+}
+
+.DescriptionText__container > p {
+  font-size: min(
+    calc(var(--scale) * 30),
+    30px
   );
 }
