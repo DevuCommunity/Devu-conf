@@ -3,6 +3,7 @@ export const GradientText = ({
   text,
   type = 'title',
   gradientType = 'devu',
+  style = {}
 }) => {
   const gradients = {
     devu: '--t-gradient-devu',
@@ -11,14 +12,21 @@ export const GradientText = ({
     c: '--c-gradient',
   }
 
+  const fontSizes = {
+    title: '300px'
+  }
+
   return (
     <span
       style={{
+        fontSize: fontSizes[type],
         background: `var(${gradients[gradientType]})`,
         WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent'
+        WebkitTextFillColor: 'transparent',
+        wordWrap: 'break-word',
+        ...style
       }}
-      className={`fredoka ${type}`}>
+      className={`fredoka`}>
       {text || children}
     </span>
   );
