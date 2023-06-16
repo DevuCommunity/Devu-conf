@@ -58,3 +58,11 @@
     30px
   );
 }
+
+.SocialNetworks__container {
+  font-size: min(calc(var(--scale) * 30), 30px);
+}
+
+.SocialNetworks__container img {
+  width: min(calc(var(--scale) * 40), 40px);
+}

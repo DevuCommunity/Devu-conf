@@ -1,11 +1,12 @@
 
 export const SocialNetworks = () => (
-  <div style={{
+  <div
+    className="SocialNetworks__container"
+    style={{
     display: "flex",
     gap: "16px",
     marginTop: "16px",
     alignItems: "center",
-    fontSize: "30px",
     fontFamily: "Inter",
   }}>
     <span>Únete en:</span>
