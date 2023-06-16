@@ -1,11 +1,18 @@
+import { motion } from "framer-motion";
 import { ActivityCard } from "../../cmponents/Activity/ActivityCard/ActivityCard";
 import { ListWrap } from "../../cmponents/Shared";
 import { UserCard } from "../../cmponents/User";
+import { ITINERARY } from "../../data/devuconf/itinerary";
+import { SPEAKERS } from "../../data/devuconf/speakers";
 import "./DevuConfPage.css";
 
 export const DevuConfPage = () => {
   return (
-    <div className="event-devuconf-container">
+    <motion.div 
+    initial={{ opacity: 0}}
+    animate={{ opacity: 1 }}   
+
+     className="event-devuconf-container" >
       <div className="current-event">
         <div className="description-panel">
           <div className="description-event">
@@ -22,66 +29,19 @@ export const DevuConfPage = () => {
           </div>
           <div className="speakers-panel">
             <ListWrap withWrap="true">
-              <UserCard
-                imgUrl="/assets/user.png"
-                name="Chema"
-                conference="Malas practicas con JS"
-                description="Sr.fullstack developer en HBE, mas de 5 anios de experiencia"
-              ></UserCard>
-              <UserCard
-                imgUrl="/assets/user.png"
-                name="Chema"
-                conference="Malas practicas con JS"
-                description="Sr.fullstack developer en HBE, mas de 5 anios de experiencia"
-              ></UserCard>
-              <UserCard
-                imgUrl="/assets/user.png"
-                name="Chema"
-                conference="Malas practicas con JS"
-                description="Sr.fullstack developer en HBE, mas de 5 anios de experiencia"
-              ></UserCard>
-              <UserCard
-                imgUrl="/assets/user.png"
-                name="Chema"
-                conference="Malas practicas con JS"
-                description="Sr.fullstack developer en HBE, mas de 5 anios de experiencia"
-              ></UserCard>
-              <UserCard
-                imgUrl="/assets/user.png"
-                name="Chema"
-                conference="Malas practicas con JS"
-                description="Sr.fullstack developer en HBE, mas de 5 anios de experiencia"
-              ></UserCard>
-              <UserCard
-                imgUrl="/assets/user.png"
-                name="Chema"
-                conference="Malas practicas con JS"
-                description="Sr.fullstack developer en HBE, mas de 5 anios de experiencia"
-              ></UserCard>
-              <UserCard
-                imgUrl="/assets/user.png"
-                name="Chema"
-                conference="Malas practicas con JS"
-                description="Sr.fullstack developer en HBE, mas de 5 anios de experiencia"
-              ></UserCard>
-              <UserCard
-                imgUrl="/assets/user.png"
-                name="Chema"
-                conference="Malas practicas con JS"
-                description="Sr.fullstack developer en HBE, mas de 5 anios de experiencia"
-              ></UserCard>
-              <UserCard
-                imgUrl="/assets/user.png"
-                name="Chema"
-                conference="Malas practicas con JS"
-                description="Sr.fullstack developer en HBE, mas de 5 anios de experiencia"
-              ></UserCard>
-              <UserCard
-                imgUrl="/assets/user.png"
-                name="Chema"
-                conference="Malas practicas con JS"
-                description="Sr.fullstack developer en HBE, mas de 5 anios de experiencia"
-              ></UserCard>
+
+              {
+                SPEAKERS.map((speaker) => (
+                  <UserCard
+                  key={speaker.id}
+                    imgUrl="/assets/user.png"
+                    name={speaker.name}
+                    conference={speaker.conference}
+                    description={speaker.description}
+                  ></UserCard>
+                ))
+              }
+              
             </ListWrap>
           </div>
         </div>
@@ -91,50 +51,21 @@ export const DevuConfPage = () => {
           </div>
           <div className="itinerary">
             <ListWrap withWrap="true">
-              <ActivityCard
-                speaker="Chema"
-                conference="Malas practicas con JS"
-                schedule="01:00 PM"
-              ></ActivityCard>
-              <ActivityCard
-                speaker="Chema"
-                conference="Malas practicas con JS"
-                schedule="01:00 PM"
-              ></ActivityCard>
-
-              <ActivityCard
-                speaker="Chema"
-                conference="Malas practicas con JS"
-                schedule="01:00 PM"
-              ></ActivityCard>
-
-              <ActivityCard
-                speaker="Chema"
-                conference="Malas practicas con JS"
-                schedule="01:00 PM"
-              ></ActivityCard>
-
-              <ActivityCard
-                speaker="Chema"
-                conference="Malas practicas con JS"
-                schedule="01:00 PM"
-              ></ActivityCard>
-
-              <ActivityCard
-                speaker="Chema"
-                conference="Malas practicas con JS"
-                schedule="01:00 PM"
-              ></ActivityCard>
-
-              <ActivityCard
-                speaker="Chema"
-                conference="Malas practicas con JS"
-                schedule="01:00 PM"
-              ></ActivityCard>
+              {
+                ITINERARY.map((item) => (
+                  <ActivityCard
+                  key={item.id}
+                    speaker={item.speaker}
+                    conference={item.title}
+                    schedule={item.time}
+                  ></ActivityCard>
+                ))
+              }
+              
             </ListWrap>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

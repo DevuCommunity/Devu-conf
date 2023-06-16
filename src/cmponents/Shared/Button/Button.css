@@ -9,21 +9,21 @@
 }
 
 .btn-border-purple{
-    border: solid 1px var(--purple);
+    /* border: solid 1px var(--purple); */
     color: var(--purple);
 }
 
 .btn-border-purple:hover{
-    border: solid 1px var(--radiactive);
+    outline: solid 1px var(--radiactive);
     color: var(--radiactive);
 }
 
 .btn-border-radiactive{
-    border: solid 1px var(--radiactive);
+    /* border: solid 1px var(--radiactive); */
     color: var(--radiactive);
 }
 
 .btn-border-radiactive:hover{
-    border: solid 1px var(--purple);
+    outline: solid 1px var(--purple);
     color: var(--purple);
 }

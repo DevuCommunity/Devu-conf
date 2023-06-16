@@ -19,3 +19,14 @@
 .menu-nav a:hover{
     outline: solid 1px  var(--purple);
 }
+
+.mobile-menu{
+    display: block;
+}
+.desk-menu{
+    display: none;
+}
+
+.icon-menu{
+    width: 25px;
+}
