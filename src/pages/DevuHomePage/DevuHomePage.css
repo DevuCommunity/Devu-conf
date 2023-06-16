@@ -43,17 +43,17 @@
 }
 
 .DescriptionText__container > span {
-  font-size: min(calc(var(--scale) * 33), 33px);
+  font-size: 33px;
 }
 
 .DescriptionText__container > p {
-  font-size: min(calc(var(--scale) * 30), 30px);
+  font-size: 30px;
 }
 
 .SocialNetworks__container {
-  font-size: min(calc(var(--scale) * 30), 30px);
+  font-size: 30px;
 }
 
 .SocialNetworks__container img {
-  width: min(calc(var(--scale) * 40), 40px);
+  width: 40px;
 }
