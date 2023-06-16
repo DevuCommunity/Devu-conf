@@ -31,32 +31,23 @@
 }
 
 .DevuHomePage__pet > img {
-  margin-top: -12px;
-  margin-left: -60px;
+  margin-top: max(calc(var(--scale) * -12), -12px);
+  margin-left: max(calc(var(--scale) * -60), -60px);
   width: calc(100% + 60px);
 }
 
 /* The following styles will handle  */
 
 .DevuHomePage__title > span {
-  font-size: min(
-    calc(var(--scale) * 300),
-    300px
-  );
+  font-size: min(calc(var(--scale) * 300), 300px);
 }
 
 .DescriptionText__container > span {
-  font-size: min(
-    calc(var(--scale) * 33),
-    33px
-  );
+  font-size: min(calc(var(--scale) * 33), 33px);
 }
 
 .DescriptionText__container > p {
-  font-size: min(
-    calc(var(--scale) * 30),
-    30px
-  );
+  font-size: min(calc(var(--scale) * 30), 30px);
 }
 
 .SocialNetworks__container {
