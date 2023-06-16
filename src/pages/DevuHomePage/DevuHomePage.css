@@ -5,7 +5,7 @@
 
 .DevuHomePage__container {
   display: grid;
-  grid-template-columns: 860px auto;
+  grid-template-columns: min(calc(var(--scale) * 860), 860px) auto;
   grid-template-rows: 363px auto;
 }
 
