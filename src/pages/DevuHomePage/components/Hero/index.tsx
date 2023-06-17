@@ -1,6 +1,7 @@
 import {Title} from "./Title";
 import {Description} from "./Description";
 import {SocialNetworks} from "./SocialNetworks";
+import "./Hero.css";
 
 export const Hero = () => {
   return (
