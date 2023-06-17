@@ -5,7 +5,6 @@ export const SocialNetworks = () => (
     style={{
     display: "flex",
     gap: "16px",
-    marginTop: "16px",
     alignItems: "center",
     fontFamily: "Inter",
   }}>
