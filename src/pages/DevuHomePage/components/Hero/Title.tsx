@@ -1,4 +1,4 @@
-import { GradientText } from "../../../cmponents/Shared/GradientText/GradientText";
+import { GradientText } from "../../../../cmponents/Shared/GradientText/GradientText";
 
 export const Title = () => {
   return (

@@ -3,7 +3,9 @@
   --scale: calc((100vw * 100 / var(--base-screen-width)) / 100);
 }
 
-.DevuHomePage__container {
+
+
+.DevuHomePage__hero-container {
   display: grid;
   grid-template-columns: min(calc(var(--scale) * 860), 860px) auto;
   grid-template-rows: auto 1fr;
