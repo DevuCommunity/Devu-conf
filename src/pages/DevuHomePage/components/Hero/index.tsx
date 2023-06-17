@@ -1,7 +1,9 @@
+import "./Hero.css";
 import {Title} from "./Title";
 import {Description} from "./Description";
 import {SocialNetworks} from "./SocialNetworks";
-import "./Hero.css";
+import {Button} from "../../../../cmponents/Shared";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -22,6 +24,13 @@ export const Hero = () => {
         <div className="DevuHomePage__description">
           <Description />
           <SocialNetworks />
+          <Link to="/conf">
+            <Button
+              variant="bordered"
+              borderColor="purple">
+              Proximo Devu.conf
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
