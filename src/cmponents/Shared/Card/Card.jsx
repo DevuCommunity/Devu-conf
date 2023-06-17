@@ -3,7 +3,7 @@ import classNames from "classnames";
 import "./Card.css";
 
 
-export const Card = ({children, boderColor = "purple", withBackground = false}) => {
+export const Card = ({children, inRow = false, wrap=false, boderColor = "", withBackground = false}) => {
 
 
   return (
@@ -11,8 +11,9 @@ export const Card = ({children, boderColor = "purple", withBackground = false}) 
       card: true,
       'card-border-purple': boderColor === "purple",
       'card-border-radiactive': boderColor === "radiactive",
-      "card-gradient": withBackground
-
+      "card-gradient": withBackground,
+      "d-row": inRow,
+      "wrap": wrap
     })} >
       {children}
     </div>

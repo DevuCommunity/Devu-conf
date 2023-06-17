@@ -1,0 +1,45 @@
+.description-event-card{
+    width: 100%;
+    max-width: 1200px;
+}
+
+.desc-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.desc-inage{
+    width: 100%;
+}
+.desc-inage img{
+    width: 100%;
+}
+.desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.desc-title{
+    color: var(--purple);
+    font-size: 40px;
+}
+.desc-text{
+    font-size: 24px;
+}
+
+
+@media screen and (min-width: 1023px) {
+    
+.desc-content{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+}
