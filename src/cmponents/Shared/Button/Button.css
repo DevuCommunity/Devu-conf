@@ -13,7 +13,8 @@
     color: var(--purple);
 }
 
-.btn-border-purple:hover{
+.btn-border-purple:hover,
+.btn-bordered-purple {
     outline: solid 1px var(--radiactive);
     color: var(--radiactive);
 }
@@ -23,7 +24,9 @@
     color: var(--radiactive);
 }
 
-.btn-border-radiactive:hover{
+.btn-border-radiactive:hover,
+.btn-bordered-radiactive
+{
     outline: solid 1px var(--purple);
     color: var(--purple);
 }
