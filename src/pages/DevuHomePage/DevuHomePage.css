@@ -2,3 +2,9 @@
   --base-screen-width: 1728;
   --scale: calc((100vw * 100 / var(--base-screen-width)) / 100);
 }
+
+.DevuHomePage__container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr;
+}
