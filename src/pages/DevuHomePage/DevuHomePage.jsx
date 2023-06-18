@@ -8,9 +8,7 @@ export const DevuHomePage = () => {
       initial={{ opacity: 0}}
       animate={{ opacity: 1 }}
     >
-      <div className="DevuHomePage__container">
         <Hero />
-      </div>
     </motion.div>
   );
 };
