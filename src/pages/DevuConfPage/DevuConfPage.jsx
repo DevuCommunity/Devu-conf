@@ -8,9 +8,9 @@ import "./DevuConfPage.css";
 
 export const DevuConfPage = () => {
   return (
-    <motion.div 
+    <motion.div
     initial={{ opacity: 0}}
-    animate={{ opacity: 1 }}   
+    animate={{ opacity: 1 }}
 
      className="event-devuconf-container" >
       <div className="current-event">
@@ -41,7 +41,7 @@ export const DevuConfPage = () => {
                   ></UserCard>
                 ))
               }
-              
+
             </ListWrap>
           </div>
         </div>
@@ -61,7 +61,7 @@ export const DevuConfPage = () => {
                   ></ActivityCard>
                 ))
               }
-              
+
             </ListWrap>
           </div>
         </div>

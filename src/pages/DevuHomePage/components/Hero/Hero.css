@@ -1,3 +1,15 @@
+.DevuHomePage__hero-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 32px - 40px);
+}
+
+@media screen and (max-width: 768px) {
+  .DevuHomePage__hero-center {
+    display: block;
+  }
+}
 
 .DevuHomePage__hero-container {
   display: grid;
@@ -5,11 +17,11 @@
   grid-template-rows: auto 1fr;
 }
 
-.DevuHomePage__hero-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 32px - 40px);
+@media screen and (max-width: 768px) {
+  .DevuHomePage__hero-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .DevuHomePage__title {
