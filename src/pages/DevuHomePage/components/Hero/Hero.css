@@ -62,6 +62,7 @@
   .DevuHomePage__pet > img {
     margin: 0;
     width: 100%;
+    margin: max(calc(var(--sm-scale) * -150), -150px) 0 0 0;
   }
 }
 
