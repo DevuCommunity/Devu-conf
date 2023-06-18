@@ -55,12 +55,13 @@
 
 .DevuHomePage__description > a {
   width: fit-content;
+  margin-left: 2px;
 }
 
 .DevuHomePage__pet > img {
   margin-top: max(calc(var(--scale) * -12), -12px);
   margin-left: max(calc(var(--scale) * -60), -60px);
-  width: calc(100% + 60px);
+  width: calc(100% + 60px - 35px);
 }
 
 @media screen and (max-width: 768px) {
