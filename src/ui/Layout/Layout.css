@@ -8,7 +8,6 @@
 .main-container{
     position: relative;
     display: flex;
-    gap: 8px;
     width: 100%;
     height: calc(100% - 40px);
     overflow-y: auto;
@@ -18,14 +17,10 @@
     position: sticky;
     top: 0px;
     width: 35px;
+    min-width: 35px;
 }
 .main-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% - 35px - 8px);
-    padding: 16px;
-
+  padding: 16px;
 }
 .menu{
     display: flex;
@@ -33,10 +28,4 @@
     align-items: flex-end;
     height: 40px;
     padding-left: 35px;
-}
-
-@media screen and (min-width: 375px ) {
-    .main-container{
-        gap: 16px;
-    }
 }
