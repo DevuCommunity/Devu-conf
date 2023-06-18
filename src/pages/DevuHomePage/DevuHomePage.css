@@ -1,4 +1,6 @@
 :root {
-  --base-screen-width: 1728;
-  --scale: calc((100vw * 100 / var(--base-screen-width)) / 100);
+  --xl-screen: 1728;
+  --sm-screen: 768;
+  --scale: calc((100vw * 100 / var(--xl-screen)) / 100);
+  --sm-scale: calc((100vw * 100 / var(--sm-screen)) / 100);
 }
