@@ -58,10 +58,24 @@
   width: calc(100% + 60px);
 }
 
+@media screen and (max-width: 768px) {
+  .DevuHomePage__pet > img {
+    margin: 0;
+    width: 100%;
+  }
+}
+
 /* The following styles will handle  */
 
 .DevuHomePage__title > span {
   font-size: min(calc(var(--scale) * 300), 300px);
+}
+
+@media screen and (max-width: 768px) {
+  .DevuHomePage__title > span {
+    text-align: center;
+    font-size: min(calc(var(--sm-scale) * 220), 220px);
+  }
 }
 
 .DescriptionText__container {
