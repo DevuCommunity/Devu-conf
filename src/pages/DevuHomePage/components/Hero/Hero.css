@@ -8,6 +8,7 @@
 @media screen and (max-width: 768px) {
   .DevuHomePage__hero-center {
     display: block;
+    height: auto;
   }
 }
 
@@ -20,7 +21,11 @@
 @media screen and (max-width: 768px) {
   .DevuHomePage__hero-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 100%;
   }
 }
 
@@ -60,7 +65,6 @@
 
 @media screen and (max-width: 768px) {
   .DevuHomePage__pet > img {
-    margin: 0;
     width: 100%;
     margin: max(calc(var(--sm-scale) * -150), -150px) 0 0 0;
   }
@@ -81,6 +85,13 @@
 
 .DescriptionText__container {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .DescriptionText__container {
+    margin-top: 0;
+    text-align: justify;
+  }
 }
 
 .DescriptionText__container > span {
