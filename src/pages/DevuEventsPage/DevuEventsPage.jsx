@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { DescriptionEventCard } from "../../cmponents/Event/DescriptionEventCard/DescriptionEventCard";
 import { Button } from "../../cmponents/Shared";
 import "./DevuEventsPage.css";
+import { Helmet } from "react-helmet-async";
 
 export const DevuEventsPage = () => {
     const navigate = useNavigate();
@@ -10,19 +11,25 @@ export const DevuEventsPage = () => {
     const handleClickDesc = () => {
         navigate("/conf");
     }
+
   return (
-    <motion.div
-      id="EventsPage__container"
-      initial={{ opacity: 0}}
-      animate={{ opacity: 1 }}
-    >
-      <div id="EventsPage__group-wrapper">
-        <DescriptionEventCard imgUrl={"/assets/networking.png"} title={"Devu.conf"} description={'Es un evento de la comunidad y para la comunidad, que reúne a los mejores developers de la región de Orizaba Veracruz para compartir su conocimiento mediante charlas y talleres. con el objetivo de motivar y ayudar las nuevas generaciones de developers.'}>
-        <Button borderColor="purple" handleClick={handleClickDesc}>
-                Proximo Devu.conf
-              </Button>
-        </DescriptionEventCard>
-      </div>
-    </motion.div>
+    <>
+      <Helmet>
+        <title>Devu | Events</title>
+      </Helmet>
+      <motion.div
+        id="EventsPage__container"
+        initial={{ opacity: 0}}
+        animate={{ opacity: 1 }}
+      >
+        <div id="EventsPage__group-wrapper">
+          <DescriptionEventCard imgUrl={"/assets/networking.png"} title={"Devu.conf"} description={'Es un evento de la comunidad y para la comunidad, que reúne a los mejores developers de la región de Orizaba Veracruz para compartir su conocimiento mediante charlas y talleres. con el objetivo de motivar y ayudar las nuevas generaciones de developers.'}>
+            <Button borderColor="purple" handleClick={handleClickDesc}>
+              Proximo Devu.conf
+            </Button>
+          </DescriptionEventCard>
+        </div>
+      </motion.div>
+    </>
   )
 }
