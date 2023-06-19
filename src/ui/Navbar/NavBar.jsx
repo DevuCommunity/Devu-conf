@@ -3,7 +3,11 @@ import "./NavBar.css";
 
 export const NavBar = () => {
   return (
-    <nav>
+    <nav style={{
+      width: "100%",
+      display: "flex",
+      justifyContent: "center"
+    }}>
       <div className="mobile-menu">
         <div className="menu-nav ">
           <NavLink to="/home">
@@ -24,7 +28,7 @@ export const NavBar = () => {
 
           <NavLink to="/networks">
             {" "}
-            
+
             <img
               src="../../../assets/icons/networks.svg"
               alt="networks"

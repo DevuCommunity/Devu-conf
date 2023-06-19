@@ -1,9 +1,12 @@
-.menu-nav{
+.mobile-menu {
+  width: min(100%, 300px);
+}
+
+.menu-nav {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 300px;
-    max-width: 700px;
+    width: 100%;
     border-radius: 20px;
     padding: 4px;
     background-color: var(--dark-purple-100);
@@ -20,9 +23,6 @@
     outline: solid 1px  var(--purple);
 }
 
-.mobile-menu{
-    display: block;
-}
 .desk-menu{
     display: none;
 }

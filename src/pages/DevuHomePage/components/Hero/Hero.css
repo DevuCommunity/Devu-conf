@@ -8,7 +8,7 @@
 @media screen and (max-width: 768px) {
   .DevuHomePage__hero-center {
     display: block;
-    height: auto;
+    height: 100ch;
   }
 }
 
@@ -25,7 +25,6 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
-    height: 100%;
   }
 }
 
@@ -55,12 +54,13 @@
 
 .DevuHomePage__description > a {
   width: fit-content;
+  margin-left: 2px;
 }
 
 .DevuHomePage__pet > img {
   margin-top: max(calc(var(--scale) * -12), -12px);
   margin-left: max(calc(var(--scale) * -60), -60px);
-  width: calc(100% + 60px);
+  width: calc(100% + 60px - 35px);
 }
 
 @media screen and (max-width: 768px) {

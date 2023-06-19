@@ -10,7 +10,7 @@ export const Layout = ({ children }) => {
         <div className="main-content">
           {children}
         </div>
-        <div className="layout-colum" />
+        <div className="polyfill-colum" />
       </div>
       <div className="menu">
         <NavBar></NavBar>
