@@ -75,7 +75,6 @@
         width: calc(100% - 305px);
     }
     .description-event{
-        max-height: 235px;
         margin-bottom: 8px;
     }
     .title{
@@ -100,6 +99,10 @@
         max-height: calc(100% - 50px);
         overflow-y: auto;
     }
+}
+
+.ConfPage__location {
+  color: var(--purple);
 }
 
 @media screen and (min-width: 1360px ) {

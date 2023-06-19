@@ -23,14 +23,23 @@ export const DevuConfPage = () => {
             <div className="description-event">
               <div className="header">
                 <span className="fredoka t-gradient title">V0.1.0</span>
-                <p className="fredoka sub-title">Devu.conf</p>
+                <p className="fredoka sub-title">DevuConf</p>
               </div>
-              <p className="event-description">
-                Esta Devu.conf tendrá cupo maximo de 20 personas y se llevará a
-                cabo el 12 de diciembre del 2023 a la 1:00 pm, el lugar del evento
-                será en el salón Lya, dentro del evento tendremos la participación
-                de:
-              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                <p className="event-description">
+                  Esta DevuConf tendrá un cupo maximo de 15 personas y se llevará a
+                  cabo el 5 de agosto del 2023 a la 1:00 pm. El lugar del evento
+                  será en el salón LYA Space.
+                </p>
+                <p>
+                  <a className="ConfPage__location" target="_blank" rel="noreferrer" href="https://maps.app.goo.gl/XT4ptyZBJEgqEScn9">
+                    <strong>Ubicación 📍</strong> Justo Sierra 9ª, Col. Ferrer Guardia, Orizaba, Ver.
+                  </a>
+                </p>
+                <p>
+                  Contaremos con la participación de:
+                </p>
+              </div>
             </div>
             <div className="speakers-panel">
               <ListWrap withWrap="true">
