@@ -6,7 +6,7 @@ export const Description = () => {
       <p style={{ display: "inline", fontFamily: "Inter" }}>
         es la comunidad abierta donde  desarrolladores y
         aficionados a la tecnología comparten su conocimiento y
-        brindan apoyo a quienes lo necesitan
+        brindan apoyo a quienes lo necesitan.
       </p>
     </div>
   );
