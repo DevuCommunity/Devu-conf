@@ -1,0 +1,10 @@
+#EventsPage__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+#EventsPage__group-wrapper {
+  margin: auto;
+}
