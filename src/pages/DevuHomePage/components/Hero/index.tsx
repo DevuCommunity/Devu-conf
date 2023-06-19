@@ -1,9 +1,9 @@
-import "./Hero.css";
-import {Title} from "./Title";
-import {Description} from "./Description";
-import {SocialNetworks} from "./SocialNetworks";
-import {Button} from "../../../../cmponents/Shared";
 import { Link } from "react-router-dom";
+import { Button } from "../../../../cmponents/Shared";
+import { Description } from "./Description";
+import "./Hero.css";
+import { SocialNetworks } from "./SocialNetworks";
+import { Title } from "./Title";
 
 export const Hero = () => {
   return (

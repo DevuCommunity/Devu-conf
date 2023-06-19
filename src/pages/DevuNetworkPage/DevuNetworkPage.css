@@ -9,6 +9,7 @@
 }
 .title-network{
     font-size: 24px;
+    letter-spacing: 3px;
     color: var(--radiactive);
 }
 .content-network{

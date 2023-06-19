@@ -6,7 +6,7 @@ export const ActivityCard = ({ conference, schedule, speaker }) => {
     <div className="activity-card">
       <Card boderColor="purple" withBackground={false}>
         <p className="fredoka activity-conference">{conference}</p>
-        <p className="fredoka activity-speaker">{speaker}</p>
+        <p className="activity-speaker">{speaker}</p>
         <span className="activity-description">{schedule}</span>
       </Card>
     </div>
