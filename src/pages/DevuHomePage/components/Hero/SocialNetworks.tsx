@@ -12,7 +12,12 @@ export const SocialNetworks = () => (
     <a style={{ fontSize: 0 }} href="facebook.com">
       <img src="/assets/facebook.svg" />
     </a>
-    <a style={{ fontSize: 0 }} href="discord.com">
+    <a
+      target="_blank"
+      rel="noreferrer"
+      style={{ fontSize: 0 }}
+      href="https://discord.gg/cGzzwVJtB"
+    >
       <img src="/assets/discord.svg" />
     </a>
   </div>
