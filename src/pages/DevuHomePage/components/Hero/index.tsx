@@ -23,7 +23,7 @@ export const Hero = () => {
               <Button
                 variant="bordered"
                 borderColor="purple">
-                Proximo Devu.conf
+                Próximo DevuConf
               </Button>
             </Link>
           </div>
