@@ -23,14 +23,7 @@
   min-width: 35px;
 }
 
-.main-content{
+.main-content {
   padding: 16px;
   height: 100%;
-}
-.menu{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 100%;
-    padding-left: 35px;
 }
