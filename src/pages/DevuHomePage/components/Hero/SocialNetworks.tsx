@@ -9,10 +9,20 @@ export const SocialNetworks = () => (
     fontFamily: "Inter",
   }}>
     <span>Únete en:</span>
-    <a style={{ fontSize: 0 }} href="facebook.com">
+    <a
+      target="_blank"
+      rel="noreferrer"
+      style={{ fontSize: 0 }}
+      href="https://www.facebook.com/profile.php?id=100093421317007&is_tour_dismissed=true"
+    >
       <img src="/assets/facebook.svg" />
     </a>
-    <a style={{ fontSize: 0 }} href="discord.com">
+    <a
+      target="_blank"
+      rel="noreferrer"
+      style={{ fontSize: 0 }}
+      href="https://discord.gg/cGzzwVJtB"
+    >
       <img src="/assets/discord.svg" />
     </a>
   </div>

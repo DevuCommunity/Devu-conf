@@ -1,8 +1,13 @@
 export const SOCIAL_NETWORK = [
     {
-        id: 1,
-        name: "facebook",
-        url: "https://www.facebook.com"
+        id: 7,
+        name: "discord",
+        url: "https://discord.gg/cGzzwVJtB"
+    },
+    {
+      id: 1,
+      name: "facebook",
+      url: "https://www.facebook.com/profile.php?id=100093421317007&is_tour_dismissed=true"
     },
     {
         id: 2,
@@ -23,7 +28,7 @@ export const SOCIAL_NETWORK = [
         id: 4,
         name: "twitter",
         url: "https://twitter.com/DevuCommunity"
-    }, 
+    },
     {
         id: 6,
         name: "tiktok",
