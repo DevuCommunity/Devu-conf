@@ -1,16 +1,11 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import { DescriptionEventCard } from "../../cmponents/Event/DescriptionEventCard/DescriptionEventCard";
 import { Button } from "../../cmponents/Shared";
 import "./DevuEventsPage.css";
-import { Helmet } from "react-helmet-async";
 
 export const DevuEventsPage = () => {
-    const navigate = useNavigate();
-
-    const handleClickDesc = () => {
-        navigate("/conf");
-    }
 
   return (
     <>
@@ -24,12 +19,15 @@ export const DevuEventsPage = () => {
       >
         <div id="EventsPage__group-wrapper">
           <DescriptionEventCard imgUrl={"/assets/networking.png"} title="DevuConf" description={'Es un evento de la comunidad y para la comunidad que reúne a los mejores developers de la región de Orizaba Veracruz para compartir su conocimiento mediante charlas y talleres, con el objetivo de motivar y ayudar a las nuevas generaciones de developers.'}>
-            <Button borderColor="purple" handleClick={handleClickDesc}>
+          <Link to="/conf">
+            <Button borderColor="purple" variant="bordered">
               Próximo DevuConf
             </Button>
+          </Link>
           </DescriptionEventCard>
         </div>
       </motion.div>
     </>
   )
 }
+

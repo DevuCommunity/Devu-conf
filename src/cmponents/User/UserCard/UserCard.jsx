@@ -7,7 +7,7 @@ export const UserCard = ({imgUrl, name, conference, description}) => {
        <div className="user-card">
     <Card boderColor="" withBackground="true">
        <UserBadge imgUrl={imgUrl} name={name} />
-        <p className="conference">{conference}</p>
+        <p className="fredoka conference">{conference}</p>
         <span className="description">
             {description}
         </span>
