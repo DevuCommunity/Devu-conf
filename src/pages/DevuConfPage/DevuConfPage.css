@@ -12,6 +12,7 @@
 }
 .description-event{
     width: 100%;
+    padding-left: 8px;
 }
 .header{
     position: relative;
@@ -24,11 +25,11 @@
 .sub-title{
     position: absolute;
     bottom: 0px;
-    font-size: 24px;
+    font-size: 32px;
     color: var(--purple);
 }
 .event-description{
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .speakers-panel{
@@ -75,19 +76,12 @@
         width: calc(100% - 305px);
     }
     .description-event{
-        max-height: 235px;
         margin-bottom: 8px;
     }
     .title{
         font-size: 150px;
     }
-    .sub-title{
-        font-size: 36px;
-        color: var(--purple);
-    }
-    .event-description{
-        font-size: 16px;
-    }
+
     .speakers-panel{
         max-height: calc(100% - 243px);
         overflow-y: auto;

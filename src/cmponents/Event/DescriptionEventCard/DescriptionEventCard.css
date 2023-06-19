@@ -24,7 +24,8 @@
 }
 .desc-title{
     color: var(--purple);
-    font-size: 40px;
+    font-size: 32px;
+    letter-spacing: 3px;
 }
 .desc-text{
     font-size: 24px;

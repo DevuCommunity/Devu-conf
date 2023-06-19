@@ -4,12 +4,13 @@
     border-radius: 4px;
     background: none;
     font-size: 20px;
+    letter-spacing: 3px;
     cursor: pointer;
     transition: .5s;
 }
 
 .btn-border-purple{
-    /* border: solid 1px var(--purple); */
+   
     color: var(--purple);
 }
 
@@ -20,7 +21,6 @@
 }
 
 .btn-border-radiactive{
-    /* border: solid 1px var(--radiactive); */
     color: var(--radiactive);
 }
 
