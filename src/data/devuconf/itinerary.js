@@ -1,20 +1,20 @@
-export const ITINERARY = [
+export const itinerary = (programReady = false) => [
     {
         id:1,
-        title:"Recepción",
-        speaker:"Devu team",
+        title: "Recepción",
+        speaker:"Devu Team",
         time: "01:00 P.M."
     },
     {
         id:2,
         title:"Bienvenida",
-        speaker:"Devu team",
+        speaker:"Devu Team",
         time: "01:20 P.M."
     },
     {
         id:3,
-        title:"Comunidades en la region",
-        speaker:"Cesar Garcia",
+        title: programReady ? "Comunidades en la región" : "Presentación",
+        speaker:"César García",
         time: "01:30 P.M."
     },
     {
@@ -25,26 +25,28 @@ export const ITINERARY = [
     },
     {
         id:5,
-        title:"Omega Up que es!!",
+        title: programReady ? "Omega Up qué es!!" : "Presentación",
         speaker:"Miguel Eduardo",
         time: "02:25 P.M."
     },
     {
         id:6,
-        title:"Coffee break",
+        title: "Coffee break",
         // speaker:"Devu team",
         time: "03:05 P.M."
     },
     {
         id:7,
-        title:"Como usar KAfka con Kubernetes",
+        title: programReady ? "Cómo usar Kafka con Kubernetes" : "Presentación",
         speaker:"Adolfo Centeno Tellez",
         time: "03:35 P.M."
     },
     {
         id:8,
-        title:"Cierre de Evento",
-        speaker:"Devu team",
+        title:"Cierre del evento",
+        speaker:"Devu Team",
         time: "04:15 P.M."
     }
 ]
+
+
