@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
-import { ActivityCard } from "../../cmponents/Activity/ActivityCard/ActivityCard";
-import { ListWrap } from "../../cmponents/Shared";
-import { UserCard } from "../../cmponents/User";
-import { ITINERARY } from "../../data/devuconf/itinerary";
-import { SPEAKERS } from "../../data/devuconf/speakers";
+import { itinerary } from "../../data/devuconf/itinerary";
+import { speakers } from "../../data/devuconf/speakers";
 import "./DevuConfPage.css";
 import { Helmet } from "react-helmet-async";
+import { SpeakersPanel } from "./components/SpeakersPanel";
+import { Itinerary } from "./components/Itinerary";
 
 export const DevuConfPage = () => {
+  const PROGRAM_READY = false;
+
   return (
     <>
       <Helmet>
@@ -16,7 +17,6 @@ export const DevuConfPage = () => {
       <motion.div
         initial={{ opacity: 0}}
         animate={{ opacity: 1 }}
-
         className="event-devuconf-container" >
         <div className="current-event">
           <div className="description-panel">
@@ -41,44 +41,10 @@ export const DevuConfPage = () => {
                 </p>
               </div>
             </div>
-            <div className="speakers-panel">
-              <ListWrap withWrap="true">
-
-                {
-                  SPEAKERS.map((speaker) => (
-                    <UserCard
-                      key={speaker.id}
-                      imgUrl="/assets/user.png"
-                      name={speaker.name}
-                      conference={speaker.conference}
-                      description={speaker.description}
-                    ></UserCard>
-                  ))
-                }
-
-              </ListWrap>
-            </div>
+            <SpeakersPanel
+              speakers={speakers(PROGRAM_READY)} />
           </div>
-          <div className="itinerary-event">
-            <div className="itinerary-title">
-              <p className="fredoka ">Programa</p>
-            </div>
-            <div className="itinerary">
-              <ListWrap withWrap="true">
-                {
-                  ITINERARY.map((item) => (
-                    <ActivityCard
-                      key={item.id}
-                      speaker={item.speaker}
-                      conference={item.title}
-                      schedule={item.time}
-                    ></ActivityCard>
-                  ))
-                }
-
-              </ListWrap>
-            </div>
-          </div>
+          <Itinerary itinerary={itinerary(PROGRAM_READY)} />
         </div>
       </motion.div>
     </>

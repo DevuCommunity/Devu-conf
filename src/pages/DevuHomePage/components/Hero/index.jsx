@@ -23,9 +23,20 @@ export const Hero = () => {
               <Button
                 variant="bordered"
                 borderColor="purple">
-                Próximo DevuConf
+                Próximo DevuConf 5 de agosto
               </Button>
             </Link>
+            <a
+              target="blank"
+              rel="noopener noreferrer"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfqX4f1jc1y3WgwyoY9P2b1delKQONNRpsVBvXe_aYg7Nl6QQ/viewform?pli=1">
+              <Button
+                borderColor="purple">
+                <p style={{ textAlign: "justify" }}>
+                  Regístrate aquí. El cupo es limitado.
+                </p>
+              </Button>
+            </a>
           </div>
         </div>
       </div>

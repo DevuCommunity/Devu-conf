@@ -19,11 +19,11 @@ export const DevuEventsPage = () => {
       >
         <div id="EventsPage__group-wrapper">
           <DescriptionEventCard imgUrl={"/assets/networking.png"} title="DevuConf" description={'Es un evento de la comunidad y para la comunidad que reúne a los mejores developers de la región de Orizaba Veracruz para compartir su conocimiento mediante charlas y talleres, con el objetivo de motivar y ayudar a las nuevas generaciones de developers.'}>
-          <Link to="/conf">
-            <Button borderColor="purple" variant="bordered">
-              Próximo DevuConf
-            </Button>
-          </Link>
+            <Link to="/conf">
+              <Button borderColor="purple" variant="bordered">
+                Próximo DevuConf
+              </Button>
+            </Link>
           </DescriptionEventCard>
         </div>
       </motion.div>

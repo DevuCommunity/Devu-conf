@@ -1,22 +1,22 @@
-export const SPEAKERS = [
+export const speakers = (programReady = false) => [
     {
         id: 1,
-        photo: "",
-        name: 'Chema',
-        conference: "Malas practicas con JS",
+        photo: "user_1.png",
+        name: 'César García',
+        conference: programReady && "Malas practicas con JS",
         description: "Sr.fullstack developer en HBE, mas de 5 anios de experiencia"
     },
     {
         id: 2,
-        photo: "",
-        name: 'Chema',
-        conference: "Malas practicas con JS",
+        photo: "user_2.png",
+        name: 'Miguel Eduardo',
+        conference: "Miguel Eduardo",
         description: "Sr.fullstack developer en HBE, mas de 5 anios de experiencia"
     },
     {
         id: 3,
-        photo: "",
-        name: 'Chema',
+        photo: "user_3.png",
+        name: 'Adolfo Centeno Tellez',
         conference: "Malas practicas con JS",
         description: "Sr.fullstack developer en HBE, mas de 5 anios de experiencia"
     }
