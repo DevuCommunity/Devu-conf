@@ -1,0 +1,110 @@
+.event-devuconf-container{
+    max-width: 1565px;
+    height: 100%;
+}
+.current-event{
+    height: 100%;
+}
+
+.description-panel{
+    width: 100%;
+    border-bottom: solid 1px var(--purple);
+}
+.description-event{
+    width: 100%;
+    padding-left: 8px;
+}
+.header{
+    position: relative;
+    height: auto;
+}
+.title{
+    font-size: 90px;
+    height: auto;
+}
+.sub-title{
+    position: absolute;
+    bottom: 0px;
+    font-size: 32px;
+    color: var(--purple);
+}
+.event-description{
+    font-size: 24px;
+}
+
+.speakers-panel{
+    display: flex;
+    justify-content: center;
+}
+
+.itinerary-event{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: solid 1px var(--radiactive);
+}
+.itinerary-title{
+    text-align: center;
+    font-size: 29px;
+    color: var(--purple);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itinerary{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px ) {
+    .title{
+        font-size: 150px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1023px ) {
+    .event-devuconf-container{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .current-event{
+        display: flex;
+        gap: 8px;
+    }
+    .description-panel{
+        width: calc(100% - 305px);
+    }
+    .description-event{
+        margin-bottom: 8px;
+    }
+    .title{
+        font-size: 150px;
+    }
+
+    .speakers-panel{
+        max-height: calc(100% - 243px);
+        overflow-y: auto;
+    }
+    .itinerary-event{
+        width: 305px;
+         height: 100%;
+    }
+    .itinerary{
+        max-height: calc(100% - 50px);
+        overflow-y: auto;
+    }
+}
+
+.ConfPage__location {
+  color: var(--purple);
+}
+
+@media screen and (min-width: 1360px ) {
+    .description-panel{
+        width: calc(100% - 305px);
+    }
+    .itinerary-event{
+        width: 305px;
+    }
+}

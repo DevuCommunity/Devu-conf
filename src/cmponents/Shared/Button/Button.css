@@ -1,0 +1,32 @@
+.btn{
+    width: auto;
+    padding: 8px;
+    border-radius: 4px;
+    background: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-border-purple{
+   
+    color: var(--purple);
+}
+
+.btn-border-purple:hover,
+.btn-bordered-purple {
+    outline: solid 1px var(--radiactive);
+    color: var(--radiactive);
+}
+
+.btn-border-radiactive{
+    color: var(--radiactive);
+}
+
+.btn-border-radiactive:hover,
+.btn-bordered-radiactive
+{
+    outline: solid 1px var(--purple);
+    color: var(--purple);
+}
