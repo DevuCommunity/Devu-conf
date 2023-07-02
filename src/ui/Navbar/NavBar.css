@@ -1,0 +1,32 @@
+.mobile-menu {
+  width: min(100%, 300px);
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 4px;
+    background-color: var(--dark-purple-100);
+}
+
+.menu-nav a{
+    text-decoration: none;
+    color: var(--gray);
+    padding: 2px;
+    transition: .5s;
+}
+
+.menu-nav a:hover{
+    outline: solid 1px  var(--purple);
+}
+
+.desk-menu{
+    display: none;
+}
+
+.icon-menu{
+    width: 25px;
+}

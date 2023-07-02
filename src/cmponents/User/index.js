@@ -1,1 +1,3 @@
-export * from "./UserCard";
+export * from "./UserBadge/UserBadge";
+export * from "./UserCard/UserCard";
+

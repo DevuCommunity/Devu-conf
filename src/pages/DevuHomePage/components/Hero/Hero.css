@@ -1,0 +1,111 @@
+.DevuHomePage__hero-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 32px - 40px);
+}
+
+@media screen and (max-width: 768px) {
+  .DevuHomePage__hero-center {
+    display: block;
+    height: 100ch;
+  }
+}
+
+.DevuHomePage__hero-container {
+  display: grid;
+  grid-template-columns: min(calc(var(--scale) * 860), 860px) auto;
+  grid-template-rows: auto 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  .DevuHomePage__hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+.DevuHomePage__title {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.DevuHomePage__pet {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.DevuHomePage__description {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.DevuHomePage__description > a {
+  width: fit-content;
+  margin-left: 2px;
+}
+
+.DevuHomePage__pet > img {
+  margin-top: max(calc(var(--scale) * -12), -12px);
+  margin-left: max(calc(var(--scale) * -60), -60px);
+  width: calc(100% + 60px - 35px);
+}
+
+@media screen and (max-width: 768px) {
+  .DevuHomePage__pet > img {
+    width: 100%;
+    margin: max(calc(var(--sm-scale) * -150), -150px) 0 0 0;
+  }
+}
+
+/* The following styles will handle  */
+
+.DevuHomePage__title > span {
+  font-size: min(calc(var(--scale) * 300), 300px);
+}
+
+@media screen and (max-width: 768px) {
+  .DevuHomePage__title > span {
+    text-align: center;
+    font-size: min(calc(var(--sm-scale) * 220), 220px);
+  }
+}
+
+.DescriptionText__container {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .DescriptionText__container {
+    margin-top: 0;
+    text-align: justify;
+  }
+}
+
+.DescriptionText__container > span {
+  font-size: 33px;
+}
+
+.DescriptionText__container > p {
+  font-size: 30px;
+}
+
+.SocialNetworks__container {
+  font-size: 30px;
+}
+
+.SocialNetworks__container img {
+  width: 40px;
+}

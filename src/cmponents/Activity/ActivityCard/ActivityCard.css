@@ -1,0 +1,16 @@
+.activity-card{
+    width: 100%;
+}
+.activity-conference{
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: var(--radiactive)
+}
+.activity-speaker{
+    font-size: 16px;
+}
+@media screen and (min-width: 768px ) {
+    .activity-card{
+        width: 290px;
+    }
+}
