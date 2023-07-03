@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { itinerary } from "../../data/devuconf/itinerary";
 import { speakers } from "../../data/devuconf/speakers";
 import "./DevuConfPage.css";
-import { Helmet } from "react-helmet-async";
-import { SpeakersPanel } from "./components/SpeakersPanel";
 import { Itinerary } from "./components/Itinerary";
+import { SpeakersPanel } from "./components/SpeakersPanel";
 
 export const DevuConfPage = () => {
   const PROGRAM_READY = false;
@@ -27,9 +27,7 @@ export const DevuConfPage = () => {
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                 <p className="event-description">
-                  Esta DevuConf tendrá un cupo maximo de 15 personas y se llevará a
-                  cabo el 5 de agosto del 2023 a la 1:00 pm. El lugar del evento
-                  será en el salón LYA Space.
+                DevuConf es un evento totalmente gratis, el cual tendrá un cupo máximo de 15 personas a las cuales se les dará un kit de bienvenida. DevuConf se llevará a cabo el 5 de agosto del 2023 de 1:00 pm a 4:45 pm. El lugar del evento será en el salón LYA Space.
                 </p>
                 <p>
                   <a className="ConfPage__location" target="_blank" rel="noreferrer" href="https://maps.app.goo.gl/XT4ptyZBJEgqEScn9">
@@ -37,7 +35,7 @@ export const DevuConfPage = () => {
                   </a>
                 </p>
                 <p>
-                  Contaremos con la participación de:
+                  Contaremos con la participación de los siguientes ponentes:
                 </p>
               </div>
             </div>
