@@ -27,15 +27,15 @@ export const Hero = () => {
               </Button>
             </Link>
             <a
+              className="link-registration"
               target="blank"
               rel="noopener noreferrer"
               href="https://docs.google.com/forms/d/e/1FAIpQLSfqX4f1jc1y3WgwyoY9P2b1delKQONNRpsVBvXe_aYg7Nl6QQ/viewform?pli=1">
-              <Button
-                borderColor="purple">
-                <p style={{ textAlign: "justify" }}>
-                  Regístrate aquí. El cupo es limitado.
-                </p>
-              </Button>
+                🚀
+                <u style={{ textAlign: "justify" }}>
+                Regístrate aquí. El cupo es limitado. 
+                </u>
+                😎
             </a>
           </div>
         </div>

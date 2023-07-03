@@ -4,7 +4,11 @@
   justify-content: center;
   height: calc(100vh - 32px - 40px);
 }
-
+.link-registration{
+  font-size: 25px;
+  color: var(--radiactive);
+  text-decoration: none !important;
+}
 @media screen and (max-width: 768px) {
   .DevuHomePage__hero-center {
     display: block;
