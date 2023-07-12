@@ -13,8 +13,8 @@ export const itinerary = (programReady = false) => [
     },
     {
         id:3,
-        title: programReady ? "Comunidades en la región" : "Presentación 1",
-        speaker: programReady && "César García Cabrera",
+        title: programReady ? "Como Iniciar con Kafka y Kubernetes sin fracasar en el intento." : "Presentación 1",
+        speaker: programReady && "Adolfo Centeno Téllez",
         time: "01:30 P.M."
     },
     {
@@ -25,7 +25,7 @@ export const itinerary = (programReady = false) => [
     },
     {
         id:5,
-        title: programReady ? "Omega Up qué es!!" : "Presentación 2",
+        title: programReady ? "If there is Code there is hope." : "Presentación 2",
         speaker: programReady && "Miguel Eduardo Romero Ruiz",
         time: "02:25 P.M."
     },
@@ -37,8 +37,8 @@ export const itinerary = (programReady = false) => [
     },
     {
         id:7,
-        title: programReady ? "Cómo usar Kafka con Kubernetes" : "Presentación 3",
-        speaker: programReady && "Adolfo Centeno Téllez",
+        title: programReady ? "Clean code: Buenas prácticas en la programación" : "Presentación 3",
+        speaker: programReady && "César García Cabrera",
         time: "03:35 P.M."
     },
     {
