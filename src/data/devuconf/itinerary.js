@@ -13,7 +13,7 @@ export const itinerary = (programReady = false) => [
     },
     {
         id:3,
-        title: programReady ? "Como Iniciar con Kafka y Kubernetes sin fracasar en el intento." : "Presentación 1",
+        title: programReady ? "Cómo iniciar con Kafka y Kubernetes sin fracasar en el intento." : "Presentación 1",
         speaker: programReady && "Adolfo Centeno Téllez",
         time: "01:30 P.M."
     },

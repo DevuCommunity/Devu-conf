@@ -3,8 +3,8 @@ export const speakers = (programReady = false) => [
         id: 3,
         photo: "adolfo.jpg",
         name: 'Adolfo Centeno Téllez',
-        conference:  programReady && "Como Iniciar con Kafka y Kubernetes sin fracasar en el intento.",
-        description: programReady && "Lic en Informatica y Maestria en Ciencias Computaciones por Tecnologico Nacional de Mexico, Doctorado en Ing. de Software por Universidad Popular Autonoma del Estado de Puebla, Devops, Modelops, Inteligencia Artificial y Computacion Cuantica."
+        conference:  programReady && "Cómo iniciar con Kafka y Kubernetes sin fracasar en el intento.",
+        description: programReady && "Lic. en Informáica y Maestría en Ciencias Computaciones por Tecnológico Nacional de México, Doctorado en Ing. de Software por Universidad Popular Autónoma del Estado de Puebla, Devops, Modelops, Inteligencia Artificial y Computación Cuántica."
     },
     {
         id: 2,

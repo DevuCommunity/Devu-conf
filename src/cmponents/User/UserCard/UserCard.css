@@ -4,10 +4,7 @@
 p.conference {
     color: var(--purple);
     font-size: 24px;
-    /* display: flex;
-    align-items: center; */
     letter-spacing: 3px;
-    /* min-height: 120px; */
 }
 
 
@@ -17,7 +14,6 @@ span.description {
     min-height: 187px;
     display: flex;
     align-items: center;
-    /* text-align: justify; */
 }
 
 @media screen and (min-width: 768px ) {
