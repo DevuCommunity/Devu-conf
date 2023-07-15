@@ -7,7 +7,7 @@ import { Itinerary } from "./components/Itinerary";
 import { SpeakersPanel } from "./components/SpeakersPanel";
 
 export const DevuConfPage = () => {
-  const PROGRAM_READY = false;
+  const PROGRAM_READY = true;
 
   return (
     <>
