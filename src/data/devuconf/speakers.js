@@ -11,7 +11,7 @@ export const speakers = (programReady = false) => [
         photo: "miguel.jpg",
         name: 'Miguel Eduardo Romero Ruiz',
         conference:  programReady && "If there is Code there is hope.",
-        description: programReady && "Coordinador de Operaciones de omegaUp, Manager de CyberSecurity para una empresa consultora global y Chief Technology Office de Smart Health Solutions."
+        description: programReady && "Coordinador de Operaciones de omegaUp, Manager de CyberSecurity para una empresa consultora global y Chief Technology Officer de Smart Health Solutions."
     },
     {
         id: 1,
