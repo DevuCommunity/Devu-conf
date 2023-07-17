@@ -83,7 +83,7 @@
     }
 
     .speakers-panel{
-        max-height: calc(100% - 243px);
+        max-height: calc(100% - 336px);
         overflow-y: auto;
     }
     .itinerary-event{
