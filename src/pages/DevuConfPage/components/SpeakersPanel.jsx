@@ -1,9 +1,9 @@
-import { UserCard } from "../../../cmponents/User";
 import { ListWrap } from "../../../cmponents/Shared";
+import { UserCard } from "../../../cmponents/User";
 
 export const SpeakersPanel = ({ speakers = [] }) => (
   <div className="speakers-panel">
-    <ListWrap withWrap="true">
+    <ListWrap withWrap="false">
       {
         speakers.map((speaker) => (
           <UserCard
